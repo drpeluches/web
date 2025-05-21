@@ -105,7 +105,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500/70 via-pink-500/70 to-blue-500/70 z-10"></div>
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text=Peluquería+a+Domicilio"
+            src="img\img-hero-1.webp?height=1080&width=1920&text=Peluquería+a+Domicilio"
             alt="Peluquería a Domicilio"
             fill
             className="object-cover"
