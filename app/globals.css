@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -13,6 +28,22 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Añadir comportamiento de scroll suave globalmente */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Ajuste para compensar la altura del navbar */
+}
+
+/* Asegurar que el hero section se ajuste correctamente en dispositivos móviles */
+@media (max-height: 600px) {
+  .hero-section {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    height: auto !important;
   }
 }
 
